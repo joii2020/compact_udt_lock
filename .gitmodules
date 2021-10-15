@@ -1,3 +1,6 @@
 [submodule "deps/ckb-c-std-lib"]
 	path = deps/ckb-c-std-lib
 	url = https://github.com/nervosnetwork/ckb-c-stdlib.git
+[submodule "deps/sparse-merkle-tree"]
+	path = deps/sparse-merkle-tree
+	url = https://github.com/nervosnetwork/sparse-merkle-tree.git

@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "compact_udt_lock.h": "c",
+        "ckb_consts.h": "c",
+        "ckb_syscalls.h": "c",
+        "ckb_syscall_apis.h": "c",
+        "compact_udt_mol2.h": "c",
+        "molecule2_reader.h": "c",
+        "debug.h": "c",
+        "molecule_reader.h": "c",
+        "stdbool.h": "c",
+        "ckb_syscall_sim.h": "c",
+        "molecule_decl_only.h": "c",
+        "blockchain.h": "c",
+        "compact_udt_mol.h": "c",
+        "blockchain-api2.h": "c",
+        "stdint.h": "c",
+        "ckb_syscall_cudt_sim.h": "c",
+        "util.h": "c",
+        "assert.h": "c"
+    }
+}

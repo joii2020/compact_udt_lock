@@ -1,8 +1,12 @@
 
+.vs/
+
 build/
 
-tests/compact_udt/CMakeFiles
-tests/compact_udt/CMakeCache.txt
-tests/compact_udt/cmake_install.cmake
-tests/compact_udt/cudt_simulator
+**/CMakeFiles
+**/CMakeCache.txt
+**/cmake_install.cmake
+*/cudt_simulator
 tests/compact_udt/Makefile
+
+c/mol/
