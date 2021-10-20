@@ -37,7 +37,7 @@ UTEST(args, version_failed) {
 
   sim_set_args(2, args_type_id, args_identy);
 
-  assert(start_cudt() == CKB_ERR_INVALID_VERSION);
+  assert(start_cudt() == CKBERR_INVALID_VERSION);
 }
 */
 

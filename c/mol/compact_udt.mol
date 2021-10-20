@@ -21,6 +21,7 @@ table MoveBetweenCompactSMT {
 union TransferTarget {
   ScriptHash,
   Identity,
+  MoveBetweenCompactSMT,
 }
 
 table RawTransfer {

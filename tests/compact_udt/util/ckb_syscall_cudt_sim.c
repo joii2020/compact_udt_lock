@@ -1,4 +1,4 @@
-#include "compact_udt_lock.c"
+﻿#include "compact_udt_lock.c"
 
 #include "ckb_syscall_cudt_sim.h"
 
@@ -124,11 +124,17 @@ void sim_set_witness() {
 ///////////////////////////////////////////////////////////////////////////////
 // ckb sim
 
+int ckb_load_script_hash(void* addr, uint64_t* len, size_t offset) {
+  ASSERT(false);
+  return 0;
+}
+
 int ckb_load_cell_data(void* addr,
                        uint64_t* len,
                        size_t offset,
                        size_t index,
                        size_t source) {
+  ASSERT(false);
   return 0;
 }
 
@@ -176,7 +182,7 @@ int ckb_load_script(void* addr, uint64_t* len, size_t offset) {
 int ckb_checked_load_script(void* addr, uint64_t* len, size_t offset) {
   uint64_t old_len = *len;
   int ret = ckb_load_script(addr, len, offset);
-  if (ret == CKB_SUCCESS && (*len) > old_len) {
+  if (ret == CUDT_SUCCESS && (*len) > old_len) {
     ret = CKB_LENGTH_NOT_ENOUGH;
   }
   return ret;
@@ -187,6 +193,7 @@ int ckb_load_witness(void* addr,
                      size_t offset,
                      size_t index,
                      size_t source) {
+  ASSERT(false);
   return 0;
 }
 
@@ -197,7 +204,7 @@ int ckb_checked_load_witness(void* addr,
                              size_t source) {
   uint64_t old_len = *len;
   int ret = ckb_load_witness(addr, len, offset, index, source);
-  if (ret == CKB_SUCCESS && (*len) > old_len) {
+  if (ret == CUDT_SUCCESS && (*len) > old_len) {
     ret = CKB_LENGTH_NOT_ENOUGH;
   }
   return ret;
@@ -205,5 +212,15 @@ int ckb_checked_load_witness(void* addr,
 
 int ckb_exit(int8_t code) {
   exit(code);
+  return 0;
+}
+
+int ckb_load_cell_by_field(void* addr,
+                           uint64_t* len,
+                           size_t offset,
+                           size_t index,
+                           size_t source,
+                           size_t field) {
+  ASSERT(false);
   return 0;
 }
